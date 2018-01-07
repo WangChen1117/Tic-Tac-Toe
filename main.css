@@ -1,0 +1,96 @@
+#bg{
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    background-color: black;
+}
+
+#head{
+    width: 100%;
+    height: 150px;
+    /* background-color: red; */
+    text-align: center;
+    color: white;
+    padding-top: 1px;
+}
+
+#head p{
+    font-size: 18px;
+}
+
+#gameboard{
+    width: 100%;
+    height: 360px;
+    background-color: #35B29C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 1s;
+}
+
+#notice{
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+
+.loc{
+    width: 88;
+    height: 88;
+    background-color: #35B29C;
+    display: inline-block;
+    margin: 9px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 14px;
+}
+
+.loc img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+#foot{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#restartBtn{
+    width: 200px;
+    height: 70px;
+    background-color: black;
+    border: 6px solid white;
+    border-radius: 6%;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#restartBtn:hover{
+    background-color: white;
+    color: black;
+}
