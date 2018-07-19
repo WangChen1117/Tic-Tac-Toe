@@ -1,4 +1,3 @@
-"use strict";
 //set global variables
 var full = 0;
 var currentPlayer = "x";
@@ -28,6 +27,13 @@ $(function () {
                 locs[+loc[0]][+loc[1]] = currentPlayer;
                 full += 1;
                 if (checkWin(moveToAdd) == "Next") {
+                    //change current player
+                    if (currentPlayer == "x") {
+                        currentPlayer = "o";
+                    }
+                    else {
+                        currentPlayer = "x";
+                    }
                     playerNotice();
                 }
                 if (checkWin(moveToAdd) == "Win") {
@@ -53,12 +59,11 @@ $(function () {
                     showResult();
                 }
                 //change current player
-                if (currentPlayer == "x") {
-                    currentPlayer = "o";
-                }
-                else {
-                    currentPlayer = "x";
-                }
+                // if(currentPlayer=="x"){
+                //     currentPlayer="o";
+                // }else{
+                //     currentPlayer="x";
+                // }
                 $();
             }
         }
